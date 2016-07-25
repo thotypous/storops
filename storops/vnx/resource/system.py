@@ -121,6 +121,7 @@ class VNXSystem(VNXCliResource):
         return self._init_file_cli()
 
     @property
+    @instance_cache
     def _ndu_list(self):
         ret = VNXNduList(self._cli)
         ret.with_no_poll()
