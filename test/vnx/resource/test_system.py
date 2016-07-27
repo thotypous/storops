@@ -117,6 +117,11 @@ class VNXSystemTest(TestCase):
         assert_that(pf.max_pool_luns, equal_to(2100))
 
     @patch_cli
+    def test_pool_feature_no_poll(self):
+        pf = self.vnx.get_pool_feature(False)
+        assert_that(pf.max_pool_luns, equal_to(2100))
+
+    @patch_cli
     def test_sp_port(self):
         assert_that(len(self.vnx.get_sp_port()), equal_to(32))
 
