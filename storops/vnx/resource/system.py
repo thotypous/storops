@@ -190,8 +190,9 @@ class VNXSystem(VNXCliResource):
     def _get_raw_resource(self):
         return self._cli.get_agent(poll=self.poll)
 
-    def get_pool_feature(self):
-        return VNXPoolFeature(self._cli)
+    def get_pool_feature(self, poll=False):
+        feature = VNXPoolFeature(self._cli)
+        return self._update_poll(feature, poll)
 
     def get_pool(self, name=None, pool_id=None):
         return VNXPool.get(pool_id=pool_id, name=name, cli=self._cli)
@@ -218,30 +219,41 @@ class VNXSystem(VNXCliResource):
     def get_connection_port(self, sp=None, port_id=None, vport_id=None):
         return VNXConnectionPort.get(self._cli, sp, port_id, vport_id)
 
-    def get_sp_port(self, sp=None, port_id=None):
-        return VNXSPPort.get(self._cli, sp, port_id)
+    @staticmethod
+    def _update_poll(obj, poll):
+        if obj is not None:
+            obj.poll = poll
+        return obj
 
-    def get_fc_port(self, sp=None, port_id=None):
-        return VNXSPPort.get(self._cli,
-                             sp=sp,
-                             port_id=port_id,
-                             port_type=VNXPortType.FC)
+    def get_sp_port(self, sp=None, port_id=None, poll=False):
+        ret = VNXSPPort.get(self._cli, sp, port_id)
+        return self._update_poll(ret, poll)
+
+    def get_fc_port(self, sp=None, port_id=None, poll=False):
+        ret = VNXSPPort.get(self._cli,
+                            sp=sp,
+                            port_id=port_id,
+                            port_type=VNXPortType.FC)
+        return self._update_poll(ret, poll)
 
     def get_iscsi_port(self, sp=None, port_id=None, vport_id=None,
-                       has_ip=None):
-        return VNXConnectionPort.get(self._cli,
-                                     sp=sp,
-                                     port_id=port_id,
-                                     vport_id=vport_id,
-                                     port_type=VNXPortType.ISCSI,
-                                     has_ip=has_ip)
+                       has_ip=None, poll=False):
+        ret = VNXConnectionPort.get(self._cli,
+                                    sp=sp,
+                                    port_id=port_id,
+                                    vport_id=vport_id,
+                                    port_type=VNXPortType.ISCSI,
+                                    has_ip=has_ip)
+        return self._update_poll(ret, poll)
 
-    def get_fcoe_port(self, sp=None, port_id=None, vport_id=None):
-        return VNXConnectionPort.get(self._cli,
-                                     sp=sp,
-                                     port_id=port_id,
-                                     vport_id=vport_id,
-                                     port_type=VNXPortType.FCOE)
+    def get_fcoe_port(self, sp=None, port_id=None, vport_id=None, poll=False):
+        ret = VNXConnectionPort.get(self._cli,
+                                    sp=sp,
+                                    port_id=port_id,
+                                    vport_id=vport_id,
+                                    port_type=VNXPortType.FCOE)
+
+        return self._update_poll(ret, poll)
 
     def delete_snap(self, name):
         self._delete_resource(VNXSnap(name, self._cli))

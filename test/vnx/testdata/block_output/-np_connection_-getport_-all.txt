@@ -1,0 +1,387 @@
+SP:  A
+Port ID:  10
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a10
+iSCSI Alias:  536.a10
+Enode MAC Address:  00-60-16-36-82-8C
+Port Speed:  1000 Mb
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  1500
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  A
+Port ID:  11
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a11
+iSCSI Alias:  536.a11
+Enode MAC Address:  00-60-16-36-82-8D
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  A
+Port ID:  12
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a12
+iSCSI Alias:  536.a12
+Enode MAC Address:  00-60-16-36-82-8E
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  A
+Port ID:  13
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a13
+iSCSI Alias:  536.a13
+Enode MAC Address:  00-60-16-36-82-8F
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  A
+Port ID:  4
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a4
+iSCSI Alias:  6536.a4
+Enode MAC Address:  00-60-16-45-5D-FC
+Port Speed:  10000 Mb
+Auto-Negotiate:  No
+Available Speeds:  10000 Mb
+Current MTU:  1500
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+Virtual Port ID:  0
+VLAN ID:  Disabled
+IP Address:  192.168.4.52
+Subnet Mask:  255.255.255.0
+Gateway Address:  0.0.0.0
+Initiator Authentication:  false
+
+SP:  A
+Port ID:  5
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a5
+iSCSI Alias:  6536.a5
+Enode MAC Address:  00-60-16-45-5D-FD
+Port Speed:  10000 Mb
+Auto-Negotiate:  No
+Available Speeds:  10000 Mb
+Current MTU:  1500
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+Virtual Port ID:  0
+VLAN ID:  Disabled
+IP Address:  192.168.3.53
+Subnet Mask:  255.255.255.0
+Gateway Address:  0.0.0.0
+Initiator Authentication:  false
+
+SP:  A
+Port ID:  8
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a8
+iSCSI Alias:  6536.a8
+Enode MAC Address:  00-60-16-58-A0-3E
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  1000 Mb
+-               :  10000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  A
+Port ID:  9
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.a9
+iSCSI Alias:  6536.a9
+Enode MAC Address:  00-60-16-58-A0-3F
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  1000 Mb
+-               :  10000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  B
+Port ID:  10
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b10
+iSCSI Alias:  536.b10
+Enode MAC Address:  00-60-16-59-F7-6E
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  B
+Port ID:  11
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b11
+iSCSI Alias:  536.b11
+Enode MAC Address:  00-60-16-59-F7-6F
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  B
+Port ID:  12
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b12
+iSCSI Alias:  536.b12
+Enode MAC Address:  00-60-16-59-F7-6C
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  B
+Port ID:  13
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b13
+iSCSI Alias:  536.b13
+Enode MAC Address:  00-60-16-59-F7-6D
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  10 Mb
+-               :  100 Mb
+-               :  1000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  B
+Port ID:  4
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b4
+iSCSI Alias:  6536.b4
+Enode MAC Address:  00-60-16-45-5F-2A
+Port Speed:  10000 Mb
+Auto-Negotiate:  No
+Available Speeds:  10000 Mb
+Current MTU:  1500
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+Virtual Port ID:  0
+VLAN ID:  Disabled
+IP Address:  192.168.4.53
+Subnet Mask:  255.255.255.0
+Gateway Address:  0.0.0.0
+Initiator Authentication:  false
+
+SP:  B
+Port ID:  5
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b5
+iSCSI Alias:  6536.b5
+Enode MAC Address:  00-60-16-45-5F-2B
+Port Speed:  10000 Mb
+Auto-Negotiate:  No
+Available Speeds:  10000 Mb
+Current MTU:  1500
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+Virtual Port ID:  0
+VLAN ID:  Disabled
+IP Address:  192.168.3.52
+Subnet Mask:  255.255.255.0
+Gateway Address:  0.0.0.0
+Initiator Authentication:  false
+
+SP:  B
+Port ID:  8
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b8
+iSCSI Alias:  6536.b8
+Enode MAC Address:  00-60-16-58-A8-AC
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  1000 Mb
+-               :  10000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  B
+Port ID:  9
+Port WWN:  iqn.1992-04.com.emc:cx.apm00153906536.b9
+iSCSI Alias:  6536.b9
+Enode MAC Address:  00-60-16-58-A8-AD
+Port Speed:  N/A
+Auto-Negotiate:  Yes
+Available Speeds:  1000 Mb
+-               :  10000 Mb
+-               :  Auto
+Current MTU:  0
+Available MTU Sizes:  "1260","1448","1500","1548","2000","2450","3000","4000","4080","4470","5000","6000","7000","8000","9000"
+Flow Control:  Auto
+Host Window:  256K
+Replication Window:  256K
+Available Window Sizes:  64K,128K,256K,512K,1MB
+
+SP:  A
+Port ID:  7
+Port WWN:  50:06:01:60:B6:E0:1C:F4:50:06:01:67:36:E0:1C:F4
+iSCSI Alias:  N/A
+Enode MAC Address:  00-60-16-48-DD-EB
+Port Speed:  0 Gb
+Auto-Negotiate:  No
+Available Speeds:  10 Gb
+Current MTU:  2240
+Available MTU Sizes:  "2240"
+Flow Control:  N/A
+Host Window:  N/A
+Replication Window:  N/A
+Available Window Sizes:  N/A
+
+Virtual Port ID:  0
+VLAN ID:  N/A
+IP Address:  N/A
+Subnet Mask:  N/A
+Gateway Address:  N/A
+Initiator Authentication:  N/A
+
+SP:  A
+Port ID:  6
+Port WWN:  50:06:01:60:B6:E0:1C:F4:50:06:01:66:36:E0:1C:F4
+iSCSI Alias:  N/A
+Enode MAC Address:  00-60-16-48-DD-EA
+Port Speed:  0 Gb
+Auto-Negotiate:  No
+Available Speeds:  10 Gb
+Current MTU:  2240
+Available MTU Sizes:  "2240"
+Flow Control:  N/A
+Host Window:  N/A
+Replication Window:  N/A
+Available Window Sizes:  N/A
+
+Virtual Port ID:  0
+VLAN ID:  N/A
+IP Address:  N/A
+Subnet Mask:  N/A
+Gateway Address:  N/A
+Initiator Authentication:  N/A
+
+SP:  B
+Port ID:  7
+Port WWN:  50:06:01:60:B6:E0:1C:F4:50:06:01:6F:36:E0:1C:F4
+iSCSI Alias:  N/A
+Enode MAC Address:  00-60-16-4E-BA-97
+Port Speed:  0 Gb
+Auto-Negotiate:  No
+Available Speeds:  10 Gb
+Current MTU:  2240
+Available MTU Sizes:  "2240"
+Flow Control:  N/A
+Host Window:  N/A
+Replication Window:  N/A
+Available Window Sizes:  N/A
+
+Virtual Port ID:  0
+VLAN ID:  N/A
+IP Address:  N/A
+Subnet Mask:  N/A
+Gateway Address:  N/A
+Initiator Authentication:  N/A
+
+SP:  B
+Port ID:  6
+Port WWN:  50:06:01:60:B6:E0:1C:F4:50:06:01:6E:36:E0:1C:F4
+iSCSI Alias:  N/A
+Enode MAC Address:  00-60-16-4E-BA-96
+Port Speed:  0 Gb
+Auto-Negotiate:  No
+Available Speeds:  10 Gb
+Current MTU:  2240
+Available MTU Sizes:  "2240"
+Flow Control:  N/A
+Host Window:  N/A
+Replication Window:  N/A
+Available Window Sizes:  N/A
+
+Virtual Port ID:  0
+VLAN ID:  N/A
+IP Address:  N/A
+Subnet Mask:  N/A
+Gateway Address:  N/A
+Initiator Authentication:  N/A

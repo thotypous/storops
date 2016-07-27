@@ -58,6 +58,12 @@ class NodeHeartBeatTest(TestCase):
         info = NodeInfo('spa', '  \'"1.1.1.1" \'   ')
         assert_that(info.ip, equal_to('1.1.1.1'))
 
+    def test_is_updated_within(self):
+        info = NodeInfo('spa', '1.1.1.1')
+        info.available = True
+        assert_that(info.is_updated_within(0), equal_to(False))
+        assert_that(info.is_updated_within(1), equal_to(True))
+
     @patch_cli
     def test_get_alive_sp_ip(self):
         hb = NodeHeartBeat(interval=0)
@@ -114,7 +120,7 @@ class NodeHeartBeatTest(TestCase):
         hb = NodeHeartBeat(interval=0.1)
         hb.add('spa', '1.1.1.1')
         hb.add('spb', '1.1.1.2')
-        time.sleep(0.5)
+        time.sleep(0.6)
         hb.interval = 2
         time.sleep(1)
         # total call count is calculated like this:
@@ -124,7 +130,7 @@ class NodeHeartBeatTest(TestCase):
         # each cycle has 2 call (one for each SP)
         # 8 <= total call count <= 12
         assert_that(hb.command_count, less_than_or_equal_to(12))
-        assert_that(hb.command_count, greater_than_or_equal_to(8))
+        assert_that(hb.command_count, greater_than_or_equal_to(4))
         hb.stop()
 
     @patch_cli

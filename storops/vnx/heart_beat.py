@@ -59,6 +59,15 @@ class NodeInfo(object):
         self._available = available
         self.timestamp = datetime.now()
 
+    def is_updated_within(self, seconds):
+        current = datetime.now()
+        if self.timestamp is None:
+            ret = False
+        else:
+            delta = current - self.timestamp
+            ret = delta.total_seconds() < seconds
+        return ret
+
     @property
     def latency(self):
         return self._latency.value()
@@ -78,7 +87,7 @@ class NodeInfo(object):
         return self.__repr__()
 
 
-class _NodeInfoMap(object):
+class NodeInfoMap(object):
     def __init__(self):
         self._map = dict()
 
@@ -131,7 +140,7 @@ class NodeHeartBeat(NaviCommand):
                                             sec_file=sec_file,
                                             timeout=timeout,
                                             naviseccli=naviseccli)
-        self._node_map = _NodeInfoMap()
+        self._node_map = NodeInfoMap()
         self._interval = interval
         self._heartbeat_thread = None
         if interval > 0:
@@ -139,7 +148,7 @@ class NodeHeartBeat(NaviCommand):
         self.command_count = 0
 
     def reset(self):
-        self._node_map = _NodeInfoMap()
+        self._node_map = NodeInfoMap()
         self.command_count = 0
 
     def _get_sp_by_category(self):
@@ -238,7 +247,9 @@ class NodeHeartBeat(NaviCommand):
 
     def _ping_sp(self, ip):
         try:
-            self.execute_cmd(ip, self.get_agent(ip))
+            node = self._node_map.get_node_by_ip(ip)
+            if node and not node.is_updated_within(self.interval):
+                self.execute_cmd(ip, self.get_agent(ip))
         except OSError:
             log.debug('skip heartbeat, naviseccli not available.')
         except ex.VNXSPDownError:
