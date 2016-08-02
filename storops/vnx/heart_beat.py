@@ -224,8 +224,10 @@ class NodeHeartBeat(NaviCommand):
                 'cannot authenticate with user {}.'.format(self._username))
         out = self.execute_naviseccli(cmd)
         try:
-            ex.check_error(out, ex.VNXSpNotAvailableError,
-                           ex.VNXCredentialError)
+            ex.check_error(out,
+                           ex.VNXSpNotAvailableError,
+                           ex.VNXCredentialError,
+                           ex.VNXDropConnectionError)
             available = True
             latency = time() - start
         except ex.VNXSpNotAvailableError:

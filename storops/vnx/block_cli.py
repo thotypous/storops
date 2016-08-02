@@ -826,18 +826,18 @@ class CliClient(object):
         if params is not None and len(params) > 0:
             if ip is None:
                 ip = self.ip
-            cmd = self._heart_beat.get_cmd_prefix(ip) + params
-            output = self._heart_beat.execute_cmd(ip, cmd)
+            output = self.do(ip, params)
         else:
             log.info('no command to execute.  return empty.')
             output = ''
         return output
 
-    def execute_dual(self, params):
-        def do(sp_ip):
-            cmd_to_exec = self._heart_beat.get_cmd_prefix(sp_ip) + params
-            return self._heart_beat.execute_cmd(sp_ip, cmd_to_exec)
+    @retry(on_error=ex.VNXDropConnectionError)
+    def do(self, ip, params):
+        cmd = self._heart_beat.get_cmd_prefix(ip) + params
+        return self._heart_beat.execute_cmd(ip, cmd)
 
+    def execute_dual(self, params):
         ip_list = self._heart_beat.get_all_alive_sps_ip()
         if not self._heart_beat.is_all_sps_alive():
             raise ex.VNXSPDownError(
@@ -847,5 +847,5 @@ class CliClient(object):
         output = []
         if params is not None and len(params) > 0:
             pool = ThreadPool(len(ip_list))
-            output = pool.map(do, ip_list)
+            output = pool.map(lambda ip: self.do(ip, params), ip_list)
         return tuple(output)
